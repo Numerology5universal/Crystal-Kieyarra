@@ -1,38 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MAA Crystals</title>
 <style>
-:root{--ink:#302535;--soft:#f4ecef;--gold:#b38a55}
-*{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:Arial,sans-serif;background:#fffdfb}
-.announce{background:var(--ink);color:#fff;text-align:center;padding:10px;font-size:12px;letter-spacing:.5px}
-header{background:#fff;padding:22px 6%;border-bottom:1px solid #eee;position:sticky;top:0;z-index:4}
-.top{display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font:700 25px Georgia,serif;letter-spacing:4px}.brand small{display:block;font:10px Arial;letter-spacing:4px;text-align:center;margin-top:5px}
-.icons{font-size:20px}nav{display:flex;justify-content:center;gap:30px;margin-top:20px;flex-wrap:wrap}nav a{color:var(--ink);text-decoration:none;font-size:13px}
-.hero{min-height:540px;background:linear-gradient(110deg,#e8d8e8,#f8eee8 60%,#d9c5d7);display:flex;align-items:center;padding:70px 9%}.hero-content{max-width:530px}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:bold}.hero h1{font:52px Georgia,serif;line-height:1.05;margin:20px 0}.hero p{line-height:1.8;color:#5e5360}.btn{display:inline-block;background:var(--ink);color:white;text-decoration:none;padding:14px 25px;margin-top:14px;border:0;cursor:pointer}
-.section{padding:65px 7%;text-align:center}.section h2{font:38px Georgia,serif;margin:12px 0 35px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.card{text-align:left}.visual{height:245px;display:flex;align-items:center;justify-content:center;font-size:88px;background:var(--soft)}.card h3{font-size:15px;margin:15px 0 8px}.price{font-weight:bold}.card button{padding:10px 15px;margin-top:12px;background:white;border:1px solid var(--ink);cursor:pointer}
-.feature{display:grid;grid-template-columns:1fr 1fr;align-items:center;background:#f3e7df}.feature-art{min-height:350px;background:linear-gradient(135deg,#d7c3d8,#f1d8db);display:flex;align-items:center;justify-content:center;font-size:120px}.feature-copy{padding:45px;text-align:left}.feature-copy h2{margin-bottom:15px}
-.newsletter{background:#eee4ed;text-align:center;padding:55px 20px}.newsletter input{padding:14px;width:min(330px,80%);border:1px solid #ccc;margin-top:15px}
-footer{background:var(--ink);color:white;text-align:center;padding:45px 20px;font-size:13px}footer h2{font:25px Georgia,serif;letter-spacing:4px}
-@media(max-width:800px){.grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:40px}.feature{grid-template-columns:1fr}.top{align-items:flex-start}nav{gap:15px}.visual{height:180px;font-size:65px}}
+  *{box-sizing:border-box}
+  body{margin:0;background:#fffaf7;font-family:Georgia,serif}
+  .page{width:100%;overflow:hidden}
+  img{display:block;width:100%;height:auto}
+  .buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:20px;background:#fffaf7}
+  a{padding:13px 24px;border-radius:28px;text-decoration:none;background:#a98542;color:white;font-family:Arial,sans-serif;font-size:14px}
+  a.whatsapp{background:#55604b}
+  @media(max-width:700px){.buttons{padding:12px}.buttons a{font-size:12px;padding:10px 16px}}
 </style>
 </head>
 <body>
-<div class="announce">WELCOME TO MAA CRYSTALS ✨ | HANDPICKED CRYSTALS & GEMSTONES</div>
-<header><div class="top"><div class="brand">MAA<small>CRYSTALS</small></div><div class="icons">⌕ &nbsp; ♡ &nbsp; 🛒</div></div>
-<nav><a href="#shop">SHOP ALL</a><a href="#bracelets">BRACELETS</a><a href="#gemstones">GEMSTONES</a><a href="#kits">STARTER KITS</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></nav></header>
-<section class="hero"><div class="hero-content"><div class="eyebrow">NATURAL • MINDFUL • BEAUTIFUL</div><h1>Bring a little magic into your everyday.</h1><p>Explore beautiful crystals, gemstones and bracelets selected for your personal collection.</p><a class="btn" href="#shop">SHOP COLLECTION</a></div></section>
-<section class="section" id="shop"><div class="eyebrow">DISCOVER OUR COLLECTION</div><h2>Featured Crystals</h2><div class="grid">
-<article class="card"><div class="visual">💜</div><h3>Amethyst Crystal</h3><div class="price">₹799</div><button onclick="add('Amethyst Crystal')">ADD TO CART</button></article>
-<article class="card"><div class="visual">🌸</div><h3>Rose Quartz</h3><div class="price">₹699</div><button onclick="add('Rose Quartz')">ADD TO CART</button></article>
-<article class="card"><div class="visual">💚</div><h3>Green Aventurine</h3><div class="price">₹599</div><button onclick="add('Green Aventurine')">ADD TO CART</button></article>
-<article class="card"><div class="visual">✨</div><h3>Clear Quartz</h3><div class="price">₹899</div><button onclick="add('Clear Quartz')">ADD TO CART</button></article>
-</div></section>
-<section class="feature" id="bracelets"><div class="feature-art">📿</div><div class="feature-copy"><div class="eyebrow">MADE FOR YOUR COLLECTION</div><h2>Crystal Bracelets</h2><p>Discover elegant bracelet styles for everyday wear and gifting.</p><a class="btn" href="#shop">EXPLORE BRACELETS</a></div></section>
-<section class="section" id="gemstones"><div class="eyebrow">EXPLORE MORE</div><h2>Gemstones & Beads</h2><p>Choose your favorite stones and create something uniquely yours.</p></section>
-<section class="newsletter" id="kits"><h2>Stay connected with MAA</h2><p>Join our list for new arrivals and special offers.</p><input placeholder="Enter your email"><br><button class="btn" onclick="alert('Thank you for joining MAA!')">SUBSCRIBE</button></section>
-<section class="section" id="about"><div class="eyebrow">OUR STORY</div><h2>Welcome to MAA Crystals</h2><p>Replace this section with your own story, policies and crystal information.</p></section>
-<footer id="contact"><h2>MAA CRYSTALS</h2><p>Crystals • Gemstones • Bracelets</p><p>WhatsApp: Add your business number</p><p>© 2026 MAA Crystals</p></footer>
-<script>function add(name){alert(name+' added to your demo cart. Add a payment/order system before accepting real orders.');}</script>
-</body></html>
+  <main class="page">
+    <img src="maa-homepage-design.png" alt="MAA Crystals homepage design">
+    <div class="buttons">
+      <a href="https://wa.me/" target="_blank">WhatsApp Order</a>
+      <a href="#shop">Shop Crystals</a>
+    </div>
+  </main>
+</body>
+</html>
